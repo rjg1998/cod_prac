@@ -8,7 +8,7 @@ def miss_ele(arr):
       return arr[0]+arr[2]-arr[1]
     elif n==2:
       return int((arr[0]+arr[1])/2)
-    elif (arr[mid]-arr[0])/(mid)>(arr[n-1]-arr[mid])/(n-mid-1):
+    elif abs(arr[mid]-arr[0])/(mid)>abs(arr[n-1]-arr[mid])/(n-mid-1):
       return miss_ele(arr[:mid+1])
     else: return miss_ele(arr[mid:])
 miss_ele(input)
