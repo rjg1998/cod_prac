@@ -5,7 +5,7 @@
 
 a=[1,1,3]
 b=[0,2,3,4,5]
-def no_format(a,b):
+def no_product(a,b):
   while a[0]==0:
     a=a[1:]
   while b[0]==0:
@@ -22,7 +22,7 @@ def no_format(a,b):
   if c[0]==0:
     c=c[1:]
   return c
-no_format(a,b)
+no_product(a,b)
 
 
 def no_add(a):
