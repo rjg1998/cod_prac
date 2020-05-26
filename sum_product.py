@@ -7,7 +7,7 @@ a=[1,1,3]
 b=[0,2,3,4,5]
  #"To obtain product of two numbers in array format"
 def no_product(a,b):
-  while a[0]==0: # remove leading zeros in input no.s
+  while a[0]==0: # removing leading zeros in input no.s
     a=a[1:]
   while b[0]==0:
     b=b[1:]
