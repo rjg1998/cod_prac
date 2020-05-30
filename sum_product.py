@@ -19,7 +19,7 @@ def no_product(a,b):
       c[n+m-1-i-j]+=a[n-1-i]*b[m-1-j]   
       if c[n+m-1-i-j]>9:
         c[n+m-1-i-j] = c[n+m-1-i-j]%10
-        c[n+m-2-i-j] = c[n+m-2-i-j]+1
+        c[n+m-2-i-j] = c[n+m-1-i-j]//10+c[n+m-2-i-j]
   if c[0]==0:
     c=c[1:]
   return c
