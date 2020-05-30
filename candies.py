@@ -19,8 +19,8 @@ def candies(c,n):
     arr[i]=(i+1)*(l+1)+int(n*l*(l+1)/2)     # arr[i] for kids in incomplete and complete rotation 
   for i in range(r,n):
     arr[i]=(i+1)*(l)+int(n*(l-1)*l/2)    # arr[i] for only complete rotations
-  if c>a*(a+1)/2: 
-    arr[(r)%(n)]+=int(c-a*(a+1)/2)        # remaining candies
+  
+  arr[(r)%(n)]+=int(c-a*(a+1)/2)        # remaining candies
   return arr
 candies(4,10)
 
